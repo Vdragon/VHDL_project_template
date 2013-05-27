@@ -21,11 +21,12 @@ use ieee.std_logic_unsigned.all;
 
 entity entity_name is
   port (
-		: in std_logic;
-		: out std_logic
+
 	);
 end entity_name;
 
 architecture architecture_name of entity_name is
+begin
 	--signal : std_logic;
+	
 end architecture;
