@@ -1,4 +1,3 @@
---Component.vhdl
 --設計名稱 | Design name
 --	
 --更新紀錄 | Changelog
