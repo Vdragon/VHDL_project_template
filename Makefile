@@ -27,10 +27,12 @@ analysis :
 
 .PHONY : elaborate
 elaboration : 
+	mkdir -p Build/
 	ghdl -e ${OPTION_GHDL_OUTPUT_EXECUTABLE_NAME} Build/Testbench.exe Testbench
 
 .PHONY : simulate
 simulate : 
+	mkdir -p Simulation/
 	 ./Build/Testbench.exe --vcd=Simulation/Testbench.vcd --stop-time=50ns 
 
 .PHONY : gtkwave
