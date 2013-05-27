@@ -4,6 +4,9 @@
 ##變數
 ##Variables
 COMMAND_GHDL_ANALYSIS = -a
+COMMAND_GHDL_ELABORATE = -e
+COMMAND_GHDL_RUN = -r
+
 OPTION_GHDL_WITH_DEBUG_SYMBOLS = -g
 OPTION_GHDL_WORKAROUND_NONASCII = -Wc,--ghdl--mb-comments
 OPTION_GHDL_BE_VERBOSE = -v
@@ -24,7 +27,7 @@ analysis :
 
 .PHONY : elaborate
 elaboration : 
-	ghdl -e -o Build/Testbench.exe Testbench
+	ghdl -e ${OPTION_GHDL_OUTPUT_EXECUTABLE_NAME} Build/Testbench.exe Testbench
 
 .PHONY : simulate
 simulate : 
