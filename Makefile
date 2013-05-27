@@ -15,7 +15,7 @@ check_syntax :
 
 .PHONY : analysis
 analysis : 
-	ghdl -a Source_code/Testbench.vhdl
+	ghdl -a -Wc,--ghdl--mb-comments Source_code/Testbench.vhdl
 
 .PHONY : elaborate
 elaboration : 
