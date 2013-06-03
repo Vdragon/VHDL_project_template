@@ -26,7 +26,7 @@ analysis :
 	ghdl ${COMMAND_GHDL_ANALYSIS} ${OPTION_GHDL_BE_VERBOSE} ${OPTION_GHDL_WITH_DEBUG_SYMBOLS} ${OPTION_GHDL_WORKAROUND_NONASCII} Source_code/Testbench.vhdl
 
 .PHONY : elaborate
-elaboration : 
+elaborate : 
 	mkdir -p Build/
 	ghdl -e ${OPTION_GHDL_OUTPUT_EXECUTABLE_NAME} Build/Testbench.exe Testbench
 
