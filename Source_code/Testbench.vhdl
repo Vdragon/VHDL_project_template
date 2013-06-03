@@ -15,18 +15,12 @@
 --	「專案名稱 | Project name」 is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more details.
 --	
 --	You should have received a copy of the GNU Lesser General Public License along with 「專案名稱 | Project name」.  If not, see <http://www.gnu.org/licenses/>.
-library ieee;
-use ieee.std_logic_1164.all;
-use ieee.std_logic_unsigned.all;
 
-entity entity_name is
-  port (
+entity Testbench is
 
-	);
-end entity_name;
+end Testbench;
 
-architecture architecture_name of entity_name is
+architecture behavioral of Testbench is
 begin
-	--signal : std_logic;
 	
 end architecture;
